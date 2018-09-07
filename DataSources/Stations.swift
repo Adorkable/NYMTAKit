@@ -11,12 +11,7 @@ import Foundation
 // TODO: support original CSVs
 
 // Based on http://web.mta.info/developers/data/nyct/subway/Stations.csv
-class Stations {
-    var stations: [Station] {
-        return self._stations
-    }
-    private var _stations: [Station]
-    
+class Stations: DataSource<Station> {
     var stationsByDaytimeRoute: [DaytimeRoute: [Station]] {
         return self._stationsByDaytimeRoute
     }
@@ -39,21 +34,11 @@ class Stations {
         return result
     }
     
-    init(json: Data) throws {
-        do {
-            let stations = try JSONDecoder().decode([Station].self, from: json)
-            self._stations = stations
-            self._stationsByDaytimeRoute = Stations.stationsByDaytimeRoute(stations)
-        } catch {
-            throw DecodeJSONDataError(context: "Stations", error: error)
-        }
-    }
-    
-    convenience init(jsonDataAssetName assetName: String, bundle: Bundle) throws {
-        guard  let asset = NSDataAsset(name: assetName, bundle: bundle) else {
-            throw UnableToFindDataAssetError(dataAssetName: assetName)
-        }
+    public override init(json: Data) throws {
+        self._stationsByDaytimeRoute = [:] // TODO: devise a better way of organizing flow, this is an antipattern
         
-        try self.init(json: asset.data)
+        try super.init(json: json)
+
+        self._stationsByDaytimeRoute = Stations.stationsByDaytimeRoute(self.values)
     }
 }

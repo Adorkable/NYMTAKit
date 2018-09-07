@@ -9,4 +9,4 @@
 import Foundation
 
 // Eventually potentially a more appropriate type, maybe an enum or self managed type
-typealias DaytimeRoute = String
+public typealias DaytimeRoute = String

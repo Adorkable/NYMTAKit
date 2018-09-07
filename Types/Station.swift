@@ -9,30 +9,30 @@
 import Foundation
 import CoreLocation
 
-struct Station: Decodable {
-    let id: UInt
-    let complexId: UInt
-    let gtfsStopId: String
+public struct Station: Decodable {
+    public let id: UInt
+    public let complexId: UInt
+    public let gtfsStopId: String
     
-    let division: String
+    public let division: String
     
-    let line: String
+    public let line: String
     
-    var name: String
+    public var name: String
     
-    let borough: String
+    public let borough: String
     
-    var daytimeRoutes: [DaytimeRoute] {
+    public var daytimeRoutes: [DaytimeRoute] {
         return self.daytimeRoutesString.split(separator: " ").map({ (substring) -> String in
             return String(substring)
         })
     }
     let daytimeRoutesString: String
-    let structure: String
+    public let structure: String
     
     let gtfsLatitude: Double
     let gtfsLongitude: Double
-    var location: CLLocation {
+    public var location: CLLocation {
         return CLLocation(latitude: self.gtfsLatitude, longitude: self.gtfsLongitude)
     }
     

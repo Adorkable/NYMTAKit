@@ -8,8 +8,8 @@
 
 import UIKit
 
-struct Color: Decodable {
-    enum Mode: CustomStringConvertible {
+public struct Color: Decodable {
+    public enum Mode: CustomStringConvertible {
         case nyctSubway
         case lirr
         case metroNorth
@@ -31,7 +31,7 @@ struct Color: Decodable {
             }
         }
         
-        static let all: [Mode] = [
+        public static let all: [Mode] = [
             .nyctSubway,
             .lirr,
             .metroNorth,
@@ -39,7 +39,7 @@ struct Color: Decodable {
             .unknown
         ]
         
-        var description: String {
+        public var description: String {
             switch self {
             case .nyctSubway:
                 return "NYCT Subway"
@@ -55,7 +55,7 @@ struct Color: Decodable {
         }
     }
     
-    var mode: Mode {
+    public var mode: Mode {
         guard let result = Mode(from: self.modeString) else {
             return .unknown
         }
@@ -63,14 +63,14 @@ struct Color: Decodable {
     }
     let modeString: String
     
-    let lineOrBranch: [String]
+    public let lineOrBranch: [String]
     
-    func asUIColor() throws -> UIColor {
+    public func asUIColor() throws -> UIColor {
         return try UIColor(hex: self.rgbHex)
     }
-    let rgbHex: String
-    let pantoneCVC: String
-    let cmyk: String
+    public let rgbHex: String
+    public let pantoneCVC: String
+    public let cmyk: String
     
     enum CodingKeys : String, CodingKey {
         case modeString = "MTA Mode"

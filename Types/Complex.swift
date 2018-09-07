@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Complex: Decodable {
-    let id: UInt
-    let name: String
+public struct Complex: Decodable {
+    public let id: UInt
+    public let name: String
     
     enum CodingKeys : String, CodingKey {
         case id = "Complex ID"

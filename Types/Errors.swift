@@ -8,24 +8,24 @@
 
 import Foundation
 
-class DecodeJSONDataError: Error {
-    let context: String
-    let error: Error
-    init(context: String, error: Error) {
+open class DecodeJSONDataError: Error {
+    public let context: String
+    public let error: Error
+    public init(context: String, error: Error) {
         self.context = context
         self.error = error
     }
-    var localizedDescription: String {
+    public var localizedDescription: String {
         return "Error while decoding \(self.context) JSON data: \(self.error.localizedDescription)"
     }
 }
 
-class UnableToFindDataAssetError: Error {
-    let dataAssetName: String
-    init(dataAssetName: String) {
+open class UnableToFindDataAssetError: Error {
+    public let dataAssetName: String
+    public init(dataAssetName: String) {
         self.dataAssetName = dataAssetName
     }
-    var localizedDescription: String {
+    public var localizedDescription: String {
         return "Unable to find data asset with name \(self.dataAssetName)"
     }
 }

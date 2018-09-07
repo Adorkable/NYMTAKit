@@ -8,13 +8,13 @@
 
 import Foundation
 
-class DataSource<Type> where Type: Decodable {
-    var values: [Type] {
+open class DataSource<Type> where Type: Decodable {
+    public var values: [Type] {
         return self._values
     }
     private var _values: [Type]
     
-    init(json: Data) throws {
+    public init(json: Data) throws {
         do {
             let values = try JSONDecoder().decode([Type].self, from: json)
             self._values = values
@@ -23,7 +23,7 @@ class DataSource<Type> where Type: Decodable {
         }
     }
     
-    convenience init(jsonDataAssetName assetName: String, bundle: Bundle) throws {
+    public convenience init(jsonDataAssetName assetName: String, bundle: Bundle) throws {
         guard  let asset = NSDataAsset(name: assetName, bundle: bundle) else {
             throw UnableToFindDataAssetError(dataAssetName: assetName)
         }
