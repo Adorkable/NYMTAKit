@@ -10,7 +10,6 @@
 		3C5D47A72142E2480004EF49 /* NYMTAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5D47A52142E2480004EF49 /* NYMTAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47AE2142E3400004EF49 /* Colors.swift */; };
 		3C5D47B12142E3880004EF49 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B02142E3880004EF49 /* Color.swift */; };
-		3C5D47B42142E7E10004EF49 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B32142E7E10004EF49 /* UIColor.swift */; };
 		3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B62142E9FE0004EF49 /* Station.swift */; };
 		3C5D47B92142EA220004EF49 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B82142EA220004EF49 /* Stations.swift */; };
 		3C5D47BB2142EABA0004EF49 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47BA2142EABA0004EF49 /* Errors.swift */; };
@@ -20,7 +19,49 @@
 		3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C22142EE570004EF49 /* DataSource.swift */; };
 		3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C42142F2720004EF49 /* Entrance.swift */; };
 		3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C62142F27A0004EF49 /* Entrances.swift */; };
+		3C8921AA2148CF4B004AA78A /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; };
+		3C8921AB2148CF63004AA78A /* CSV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CCA639C214381630057E454 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA639B214381630057E454 /* Cartfile */; };
+		3CCA63A1214381CD0057E454 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCA639F214381CD0057E454 /* GTFSKit.framework */; };
+		3CCA63AB214381E40057E454 /* NYMTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5D47A22142E2470004EF49 /* NYMTAKit.framework */; };
+		3CCA63B3214381F70057E454 /* GTFSKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3CCA639F214381CD0057E454 /* GTFSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CCA63B5214383EE0057E454 /* HEXColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCA63B4214383EE0057E454 /* HEXColor.framework */; };
+		3CCA63B6214383FB0057E454 /* HEXColor.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3CCA63B4214383EE0057E454 /* HEXColor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CCA63B8214387600057E454 /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63B7214387600057E454 /* ColorsTest.swift */; };
+		3CCA63BB21438CD30057E454 /* MTA - colors.fixed.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63BA21438CD30057E454 /* MTA - colors.fixed.csv */; };
+		3CCA63BD214394840057E454 /* ComplexesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63BC214394840057E454 /* ComplexesTest.swift */; };
+		3CCA63BF214394B40057E454 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63BE214394B40057E454 /* Shared.swift */; };
+		3CCA63C1214399540057E454 /* MTA - StationComplexes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63C0214399540057E454 /* MTA - StationComplexes.csv */; };
+		3CCA63C72143A64E0057E454 /* StationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63C62143A64E0057E454 /* StationsTest.swift */; };
+		3CCA63C92143A6730057E454 /* NYC - MTA Subway Stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63C82143A6730057E454 /* NYC - MTA Subway Stations.csv */; };
+		3CCA63CB2143A7DA0057E454 /* MTA - StationEntrances.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63CA2143A7D90057E454 /* MTA - StationEntrances.csv */; };
+		3CCA63CD2143A7EF0057E454 /* EntrancesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63CC2143A7EF0057E454 /* EntrancesTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CCA63AC214381E40057E454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C5D47992142E2470004EF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C5D47A12142E2470004EF49;
+			remoteInfo = NYMTAKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CCA63B1214381F00057E454 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C8921AB2148CF63004AA78A /* CSV.framework in CopyFiles */,
+				3CCA63B6214383FB0057E454 /* HEXColor.framework in CopyFiles */,
+				3CCA63B3214381F70057E454 /* GTFSKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3C5D47A22142E2470004EF49 /* NYMTAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYMTAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,7 +69,6 @@
 		3C5D47A62142E2480004EF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C5D47AE2142E3400004EF49 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3C5D47B02142E3880004EF49 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		3C5D47B32142E7E10004EF49 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3C5D47B62142E9FE0004EF49 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		3C5D47B82142EA220004EF49 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		3C5D47BA2142EABA0004EF49 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -38,6 +78,21 @@
 		3C5D47C22142EE570004EF49 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		3C5D47C42142F2720004EF49 /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		3C5D47C62142F27A0004EF49 /* Entrances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrances.swift; sourceTree = "<group>"; };
+		3C8921A92148CF4B004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
+		3CCA639B214381630057E454 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3CCA639F214381CD0057E454 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/iOS/GTFSKit.framework; sourceTree = "<group>"; };
+		3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYMTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCA63AA214381E40057E454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCA63B4214383EE0057E454 /* HEXColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HEXColor.framework; path = Carthage/Build/iOS/HEXColor.framework; sourceTree = "<group>"; };
+		3CCA63B7214387600057E454 /* ColorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTest.swift; sourceTree = "<group>"; };
+		3CCA63BA21438CD30057E454 /* MTA - colors.fixed.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MTA - colors.fixed.csv"; sourceTree = "<group>"; };
+		3CCA63BC214394840057E454 /* ComplexesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexesTest.swift; sourceTree = "<group>"; };
+		3CCA63BE214394B40057E454 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		3CCA63C0214399540057E454 /* MTA - StationComplexes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MTA - StationComplexes.csv"; sourceTree = "<group>"; };
+		3CCA63C62143A64E0057E454 /* StationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsTest.swift; sourceTree = "<group>"; };
+		3CCA63C82143A6730057E454 /* NYC - MTA Subway Stations.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NYC - MTA Subway Stations.csv"; sourceTree = "<group>"; };
+		3CCA63CA2143A7D90057E454 /* MTA - StationEntrances.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MTA - StationEntrances.csv"; sourceTree = "<group>"; };
+		3CCA63CC2143A7EF0057E454 /* EntrancesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrancesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +100,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8921AA2148CF4B004AA78A /* CSV.framework in Frameworks */,
+				3CCA63B5214383EE0057E454 /* HEXColor.framework in Frameworks */,
+				3CCA63A1214381CD0057E454 /* GTFSKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCA63A3214381E40057E454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCA63AB214381E40057E454 /* NYMTAKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,11 +120,14 @@
 		3C5D47982142E2470004EF49 = {
 			isa = PBXGroup;
 			children = (
+				3CCA639B214381630057E454 /* Cartfile */,
+				3CCA63C32143A31E0057E454 /* Utility */,
 				3C5D47B52142E8C70004EF49 /* DataSources */,
 				3C5D47AD2142E2F70004EF49 /* Types */,
-				3C5D47B22142E7D80004EF49 /* Utility */,
 				3C5D47A42142E2470004EF49 /* NYMTAKit */,
+				3CCA63A7214381E40057E454 /* NYMTAKitTests */,
 				3C5D47A32142E2470004EF49 /* Products */,
+				3CCA639D214381CD0057E454 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				3C5D47A22142E2470004EF49 /* NYMTAKit.framework */,
+				3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,14 +162,6 @@
 			path = Types;
 			sourceTree = "<group>";
 		};
-		3C5D47B22142E7D80004EF49 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				3C5D47B32142E7E10004EF49 /* UIColor.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
 		3C5D47B52142E8C70004EF49 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +172,48 @@
 				3C5D47C62142F27A0004EF49 /* Entrances.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		3CCA639D214381CD0057E454 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C8921A92148CF4B004AA78A /* CSV.framework */,
+				3CCA63B4214383EE0057E454 /* HEXColor.framework */,
+				3CCA639F214381CD0057E454 /* GTFSKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CCA63A7214381E40057E454 /* NYMTAKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CCA63BE214394B40057E454 /* Shared.swift */,
+				3CCA63B921438CB10057E454 /* Test Data */,
+				3CCA63AA214381E40057E454 /* Info.plist */,
+				3CCA63B7214387600057E454 /* ColorsTest.swift */,
+				3CCA63BC214394840057E454 /* ComplexesTest.swift */,
+				3CCA63C62143A64E0057E454 /* StationsTest.swift */,
+				3CCA63CC2143A7EF0057E454 /* EntrancesTest.swift */,
+			);
+			path = NYMTAKitTests;
+			sourceTree = "<group>";
+		};
+		3CCA63B921438CB10057E454 /* Test Data */ = {
+			isa = PBXGroup;
+			children = (
+				3CCA63CA2143A7D90057E454 /* MTA - StationEntrances.csv */,
+				3CCA63C82143A6730057E454 /* NYC - MTA Subway Stations.csv */,
+				3CCA63C0214399540057E454 /* MTA - StationComplexes.csv */,
+				3CCA63BA21438CD30057E454 /* MTA - colors.fixed.csv */,
+			);
+			path = "Test Data";
+			sourceTree = "<group>";
+		};
+		3CCA63C32143A31E0057E454 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,18 +248,41 @@
 			productReference = 3C5D47A22142E2470004EF49 /* NYMTAKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		3CCA63A5214381E40057E454 /* NYMTAKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCA63AE214381E40057E454 /* Build configuration list for PBXNativeTarget "NYMTAKitTests" */;
+			buildPhases = (
+				3CCA63A2214381E40057E454 /* Sources */,
+				3CCA63A3214381E40057E454 /* Frameworks */,
+				3CCA63A4214381E40057E454 /* Resources */,
+				3CCA63B1214381F00057E454 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CCA63AD214381E40057E454 /* PBXTargetDependency */,
+			);
+			name = NYMTAKitTests;
+			productName = NYMTAKitTests;
+			productReference = 3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3C5D47992142E2470004EF49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Adorkable;
 				TargetAttributes = {
 					3C5D47A12142E2470004EF49 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
+					};
+					3CCA63A5214381E40057E454 = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -172,6 +299,7 @@
 			projectRoot = "";
 			targets = (
 				3C5D47A12142E2470004EF49 /* NYMTAKit */,
+				3CCA63A5214381E40057E454 /* NYMTAKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +309,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCA639C214381630057E454 /* Cartfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCA63A4214381E40057E454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCA63CB2143A7DA0057E454 /* MTA - StationEntrances.csv in Resources */,
+				3CCA63BB21438CD30057E454 /* MTA - colors.fixed.csv in Resources */,
+				3CCA63C92143A6730057E454 /* NYC - MTA Subway Stations.csv in Resources */,
+				3CCA63C1214399540057E454 /* MTA - StationComplexes.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +337,6 @@
 				3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */,
 				3C5D47B92142EA220004EF49 /* Stations.swift in Sources */,
 				3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */,
-				3C5D47B42142E7E10004EF49 /* UIColor.swift in Sources */,
 				3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */,
 				3C5D47BB2142EABA0004EF49 /* Errors.swift in Sources */,
 				3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */,
@@ -206,7 +345,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CCA63A2214381E40057E454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCA63BF214394B40057E454 /* Shared.swift in Sources */,
+				3CCA63CD2143A7EF0057E454 /* EntrancesTest.swift in Sources */,
+				3CCA63BD214394840057E454 /* ComplexesTest.swift in Sources */,
+				3CCA63C72143A64E0057E454 /* StationsTest.swift in Sources */,
+				3CCA63B8214387600057E454 /* ColorsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CCA63AD214381E40057E454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C5D47A12142E2470004EF49 /* NYMTAKit */;
+			targetProxy = 3CCA63AC214381E40057E454 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3C5D47A82142E2480004EF49 /* Debug */ = {
@@ -339,6 +498,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NYMTAKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,6 +528,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NYMTAKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,6 +542,40 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CCA63AF214381E40057E454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NYMTAKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CCA63B0214381E40057E454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NYMTAKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,6 +598,15 @@
 			buildConfigurations = (
 				3C5D47AB2142E2480004EF49 /* Debug */,
 				3C5D47AC2142E2480004EF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCA63AE214381E40057E454 /* Build configuration list for PBXNativeTarget "NYMTAKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCA63AF214381E40057E454 /* Debug */,
+				3CCA63B0214381E40057E454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

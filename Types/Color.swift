@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import HEXColor
+import GTFSKit
 
 public struct Color: Decodable {
+    // TODO: find more appropriate place
     public enum Mode: CustomStringConvertible {
         case nyctSubway
         case lirr
@@ -63,10 +66,13 @@ public struct Color: Decodable {
     }
     let modeString: String
     
-    public let lineOrBranch: [String]
+    public var lineOrBranch: [String] {
+        return self.lineOrBranchString.split(separator: "/").map({ String($0) })
+    }
+    let lineOrBranchString: String
     
     public func asUIColor() throws -> UIColor {
-        return try UIColor(hex: self.rgbHex)
+        return try UIColor(rgba_throws: self.rgbHex)
     }
     public let rgbHex: String
     public let pantoneCVC: String
@@ -74,7 +80,7 @@ public struct Color: Decodable {
     
     enum CodingKeys : String, CodingKey {
         case modeString = "MTA Mode"
-        case lineOrBranch = "Line/Branch"
+        case lineOrBranchString = "Line/Branch"
         case rgbHex = "RGB Hex"
         case pantoneCVC = "Pantone CVC"
         case cmyk = "CMYK"

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import GTFSKit
 
 public struct Station: Decodable {
     public let id: UInt
@@ -43,7 +44,7 @@ public struct Station: Decodable {
     
     let gtfsLatitude: Double
     let gtfsLongitude: Double
-    public var location: CLLocation {
+    public var gtfsLocation: CLLocation {
         return CLLocation(latitude: self.gtfsLatitude, longitude: self.gtfsLongitude)
     }
     
@@ -70,6 +71,7 @@ public struct Station: Decodable {
     
     func entrances(entrances: Entrances) -> [Entrance] {
         // Station name is not consistent between data sources, we're using station location for now
-        return entrances.values.filter { $0.stationLocation == self.location }
+        return entrances.values.filter { $0.stationLocation == self.gtfsLocation }
     }
 }
+

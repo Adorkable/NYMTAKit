@@ -11,11 +11,12 @@ import Foundation
 // TODO: support original CSVs
 
 // Based on http://web.mta.info/developers/data/nyct/subway/Stations.csv
-class Stations: DataSource<Station> {
-    var stationsByDaytimeRoute: [DaytimeRoute: [Station]] {
+open class Stations: DataSource<Station> {
+    public var stationsByDaytimeRoute: [DaytimeRoute: [Station]] {
         return self._stationsByDaytimeRoute
     }
-    private var _stationsByDaytimeRoute: [DaytimeRoute: [Station]]
+    // TODO: devise a better way of organizing flow and hopefully not make optional, this is an antipattern
+    private var _stationsByDaytimeRoute: [DaytimeRoute: [Station]] = [:]
     
     static func stationsByDaytimeRoute(_ stations: [Station]) -> [DaytimeRoute: [Station]] {
         var result: [DaytimeRoute: [Station]] = [:]
@@ -34,11 +35,9 @@ class Stations: DataSource<Station> {
         return result
     }
     
-    public override init(json: Data) throws {
-        self._stationsByDaytimeRoute = [:] // TODO: devise a better way of organizing flow, this is an antipattern
+    override func postValuesInitialized(values: [Station]) {
+        super.postValuesInitialized(values: values)
         
-        try super.init(json: json)
-
         self._stationsByDaytimeRoute = Stations.stationsByDaytimeRoute(self.values)
     }
 }

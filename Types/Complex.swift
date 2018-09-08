@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import GTFSKit
 
 public struct Complex: Decodable {
     public let id: UInt

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import GTFSKit
 
 public struct Entrance: Decodable {
     public let division: String
@@ -21,7 +22,7 @@ public struct Entrance: Decodable {
         return CLLocation(latitude: self.stationLatitude, longitude: self.stationLongitude)
     }
     func station(stations: Stations) throws -> Station {
-        let found = stations.values.filter { $0.location == self.stationLocation }
+        let found = stations.values.filter { $0.gtfsLocation == self.stationLocation }
         guard found.count < 2 else {
             throw TooManyMatchesFoundError(context: "Station", for: Swift.type(of: self), matches: found)
         }
