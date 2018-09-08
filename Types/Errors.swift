@@ -29,3 +29,46 @@ open class UnableToFindDataAssetError: Error {
         return "Unable to find data asset with name \(self.dataAssetName)"
     }
 }
+
+open class UnexpectedValueForTypeError: Error {
+    public let value: String
+    public let type: String
+    public let context: String
+    public init(value: String, type: String, context: String) {
+        self.value = value
+        self.type = type
+        self.context = context
+    }
+    
+    public var localizedDescription: String {
+        return "Unexpected value '\(self.value)' for type '\(self.type)' in \(self.context)"
+    }
+}
+
+open class NoMatchesFoundError<Type>: Error {
+    public let context: String
+    public let forObject: Type
+    public init(context: String, for forObject: Type) {
+        self.context = context
+        self.forObject = forObject
+    }
+    
+    public var localizedDescription: String {
+        return "No '\(self.context)' matches found for \(self.forObject)"
+    }
+}
+
+open class TooManyMatchesFoundError<Type, MatchType>: Error {
+    public let context: String
+    public let forObject: Type
+    public let matches: [MatchType]
+    public init(context: String, for forObject: Type, matches: [MatchType]) {
+        self.context = context
+        self.forObject = forObject
+        self.matches = matches
+    }
+    
+    public var localizedDescription: String {
+        return "Too many '\(self.context)' matches (\(self.matches.count)) found for \(self.forObject)"
+    }
+}

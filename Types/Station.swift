@@ -12,6 +12,17 @@ import CoreLocation
 public struct Station: Decodable {
     public let id: UInt
     public let complexId: UInt
+    func complex(complexes: Complexes) -> Complex? {
+        var found: Complex? = nil
+        for test in complexes.values {
+            if test.id == self.complexId {
+                found = test
+                break
+            }
+        }
+        return found
+    }
+
     public let gtfsStopId: String
     
     public let division: String
@@ -55,5 +66,10 @@ public struct Station: Decodable {
         
         case gtfsLatitude = "GTFS Latitude"
         case gtfsLongitude = "GTFS Longitude"
+    }
+    
+    func entrances(entrances: Entrances) -> [Entrance] {
+        // Station name is not consistent between data sources, we're using station location for now
+        return entrances.values.filter { $0.stationLocation == self.location }
     }
 }

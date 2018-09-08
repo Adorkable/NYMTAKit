@@ -18,6 +18,8 @@
 		3C5D47BF2142EDA40004EF49 /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47BE2142EDA40004EF49 /* Complex.swift */; };
 		3C5D47C12142EDE60004EF49 /* Complexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C02142EDE60004EF49 /* Complexes.swift */; };
 		3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C22142EE570004EF49 /* DataSource.swift */; };
+		3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C42142F2720004EF49 /* Entrance.swift */; };
+		3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C62142F27A0004EF49 /* Entrances.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3C5D47BE2142EDA40004EF49 /* Complex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex.swift; sourceTree = "<group>"; };
 		3C5D47C02142EDE60004EF49 /* Complexes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complexes.swift; sourceTree = "<group>"; };
 		3C5D47C22142EE570004EF49 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		3C5D47C42142F2720004EF49 /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
+		3C5D47C62142F27A0004EF49 /* Entrances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrances.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				3C5D47B02142E3880004EF49 /* Color.swift */,
-				3C5D47B62142E9FE0004EF49 /* Station.swift */,
-				3C5D47BA2142EABA0004EF49 /* Errors.swift */,
-				3C5D47BC2142ED080004EF49 /* DaytimeRoute.swift */,
 				3C5D47BE2142EDA40004EF49 /* Complex.swift */,
+				3C5D47BC2142ED080004EF49 /* DaytimeRoute.swift */,
+				3C5D47C42142F2720004EF49 /* Entrance.swift */,
+				3C5D47BA2142EABA0004EF49 /* Errors.swift */,
+				3C5D47B62142E9FE0004EF49 /* Station.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				3C5D47B82142EA220004EF49 /* Stations.swift */,
 				3C5D47C02142EDE60004EF49 /* Complexes.swift */,
 				3C5D47C22142EE570004EF49 /* DataSource.swift */,
+				3C5D47C62142F27A0004EF49 /* Entrances.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 				3C5D47BD2142ED080004EF49 /* DaytimeRoute.swift in Sources */,
 				3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */,
 				3C5D47B92142EA220004EF49 /* Stations.swift in Sources */,
+				3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */,
 				3C5D47B42142E7E10004EF49 /* UIColor.swift in Sources */,
 				3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */,
 				3C5D47BB2142EABA0004EF49 /* Errors.swift in Sources */,
+				3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */,
 				3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */,
 				3C5D47B12142E3880004EF49 /* Color.swift in Sources */,
 			);
