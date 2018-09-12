@@ -9,4 +9,7 @@
 import GTFSKit
 
 public extension Stop {
+    public func stopTimes(_ stopTimes: [StopTime]) -> [StopTime] {
+        return stopTimes.filter({ $0.stopId == self.id })
+    }
 }

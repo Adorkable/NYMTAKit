@@ -26,6 +26,23 @@ public extension StopTime {
         return result
     }
     
+    public func trip(_ trips: [Trip]) throws -> Trip {
+        
+        let found = trips.filter({ (trip) -> Bool in
+            return trip.id == self.tripId
+        })
+        
+        guard found.count < 2 else {
+            throw TooManyMatchesFoundError(context: "StopTime::trip([Trip])", for: Trip.self, matches: found)
+        }
+        
+        guard let result = found.first else {
+            throw NoMatchesFoundError(context: "StopTime::trip([Trip])", for: Trip.self)
+        }
+        
+        return result
+    }
+    
     public static func sort(left: StopTime, right: StopTime) -> ComparisonResult {
         if left.stopSequence < right.stopSequence {
             return .orderedAscending
@@ -35,5 +52,4 @@ public extension StopTime {
             return .orderedDescending
         }
     }
-
 }
