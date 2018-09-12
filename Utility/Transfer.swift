@@ -8,15 +8,15 @@
 
 import GTFSKit
 
-extension Transfer {
-    func fromStop(stops: [Stop]) -> Stop? {
+public extension Transfer {
+    public func fromStop(stops: [Stop]) -> Stop? {
         // TODO: test for 0 or greater than 1
         return stops.filter({ (stop) -> Bool in
             return stop.id == self.fromStopId
         }).first
     }
 
-    func toStop(stops: [Stop]) -> Stop? {
+    public func toStop(stops: [Stop]) -> Stop? {
         // TODO: test for 0 or greater than 1
         return stops.filter({ (stop) -> Bool in
             return stop.id == self.toStopId

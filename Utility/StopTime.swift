@@ -8,11 +8,32 @@
 
 import GTFSKit
 
-extension StopTime {
-    func stop(stops: [Stop]) -> Stop? {
-        // TODO: test for 0 or greater than 1
-        return stops.filter({ (stop) -> Bool in
+public extension StopTime {
+    public func stop(stops: [Stop]) throws -> Stop {
+
+        let found = stops.filter({ (stop) -> Bool in
             return stop.id == self.stopId
-        }).first
+        })
+        
+        guard found.count < 2 else {
+            throw TooManyMatchesFoundError(context: "StopTime::stop([Stop])", for: Stop.self, matches: found)
+        }
+        
+        guard let result = found.first else {
+            throw NoMatchesFoundError(context: "StopTime::stop([Stop])", for: Stop.self)
+        }
+        
+        return result
     }
+    
+    public static func sort(left: StopTime, right: StopTime) -> ComparisonResult {
+        if left.stopSequence < right.stopSequence {
+            return .orderedAscending
+        } else if left.stopSequence == right.stopSequence {
+            return .orderedSame
+        } else {
+            return .orderedDescending
+        }
+    }
+
 }

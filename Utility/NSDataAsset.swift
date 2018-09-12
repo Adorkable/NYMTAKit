@@ -13,9 +13,9 @@ import UIKit
 import Cocoa
 #endif
 
-extension NSDataAsset {
+public extension NSDataAsset {
 #if os(macOS)
-    convenience init?(name: String, bundle: Bundle) {
+    public convenience init?(name: String, bundle: Bundle) {
         let dataAssetName = NSDataAsset.Name(rawValue: name)
         self.init(name: dataAssetName, bundle: bundle)
     }

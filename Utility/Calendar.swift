@@ -8,8 +8,8 @@
 
 import GTFSKit
 
-extension GTFSKit.Calendar {
-    func calendarDates(_ calendarDates: [GTFSKit.CalendarDate]) -> [GTFSKit.CalendarDate] {
+public extension GTFSKit.Calendar {
+    public func calendarDates(_ calendarDates: [GTFSKit.CalendarDate]) -> [GTFSKit.CalendarDate] {
         return calendarDates.filter({ (calendarDate) -> Bool in
             return calendarDate.serviceId == self.serviceId
         })
