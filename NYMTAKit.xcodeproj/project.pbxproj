@@ -21,6 +21,10 @@
 		3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C62142F27A0004EF49 /* Entrances.swift */; };
 		3C8921AA2148CF4B004AA78A /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; };
 		3C8921AB2148CF63004AA78A /* CSV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C8921AD2148D2F9004AA78A /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AC2148D2F9004AA78A /* StopTime.swift */; };
+		3C8921AF2148D3BE004AA78A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AE2148D3BE004AA78A /* Transfer.swift */; };
+		3C8921B12148D475004AA78A /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B02148D475004AA78A /* CalendarDate.swift */; };
+		3C8921B32148D4FE004AA78A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B22148D4FE004AA78A /* Calendar.swift */; };
 		3CCA639C214381630057E454 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA639B214381630057E454 /* Cartfile */; };
 		3CCA63A1214381CD0057E454 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCA639F214381CD0057E454 /* GTFSKit.framework */; };
 		3CCA63AB214381E40057E454 /* NYMTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5D47A22142E2470004EF49 /* NYMTAKit.framework */; };
@@ -79,6 +83,10 @@
 		3C5D47C42142F2720004EF49 /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		3C5D47C62142F27A0004EF49 /* Entrances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrances.swift; sourceTree = "<group>"; };
 		3C8921A92148CF4B004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
+		3C8921AC2148D2F9004AA78A /* StopTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTime.swift; sourceTree = "<group>"; };
+		3C8921AE2148D3BE004AA78A /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		3C8921B02148D475004AA78A /* CalendarDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
+		3C8921B22148D4FE004AA78A /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		3CCA639B214381630057E454 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		3CCA639F214381CD0057E454 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/iOS/GTFSKit.framework; sourceTree = "<group>"; };
 		3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYMTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +220,10 @@
 		3CCA63C32143A31E0057E454 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				3C8921AC2148D2F9004AA78A /* StopTime.swift */,
+				3C8921AE2148D3BE004AA78A /* Transfer.swift */,
+				3C8921B02148D475004AA78A /* CalendarDate.swift */,
+				3C8921B22148D4FE004AA78A /* Calendar.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -335,13 +347,17 @@
 				3C5D47BF2142EDA40004EF49 /* Complex.swift in Sources */,
 				3C5D47BD2142ED080004EF49 /* DaytimeRoute.swift in Sources */,
 				3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */,
+				3C8921B32148D4FE004AA78A /* Calendar.swift in Sources */,
 				3C5D47B92142EA220004EF49 /* Stations.swift in Sources */,
 				3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */,
+				3C8921AD2148D2F9004AA78A /* StopTime.swift in Sources */,
+				3C8921B12148D475004AA78A /* CalendarDate.swift in Sources */,
 				3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */,
 				3C5D47BB2142EABA0004EF49 /* Errors.swift in Sources */,
 				3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */,
 				3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */,
 				3C5D47B12142E3880004EF49 /* Color.swift in Sources */,
+				3C8921AF2148D3BE004AA78A /* Transfer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
