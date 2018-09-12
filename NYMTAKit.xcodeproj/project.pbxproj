@@ -19,12 +19,46 @@
 		3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C22142EE570004EF49 /* DataSource.swift */; };
 		3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C42142F2720004EF49 /* Entrance.swift */; };
 		3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C62142F27A0004EF49 /* Entrances.swift */; };
+		3C77287F214981400070E314 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C77287D214981400070E314 /* CSV.framework */; };
+		3C772880214981400070E314 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C77287E214981400070E314 /* GTFSKit.framework */; };
+		3C772881214981850070E314 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C77287D214981400070E314 /* CSV.framework */; };
+		3C772882214981850070E314 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C77287E214981400070E314 /* GTFSKit.framework */; };
+		3C772885214981B00070E314 /* GTFSKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C772883214981B00070E314 /* GTFSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C772886214981B00070E314 /* CSV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C772884214981B00070E314 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C8921AA2148CF4B004AA78A /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; };
 		3C8921AB2148CF63004AA78A /* CSV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C8921AD2148D2F9004AA78A /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AC2148D2F9004AA78A /* StopTime.swift */; };
 		3C8921AF2148D3BE004AA78A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AE2148D3BE004AA78A /* Transfer.swift */; };
 		3C8921B12148D475004AA78A /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B02148D475004AA78A /* CalendarDate.swift */; };
 		3C8921B32148D4FE004AA78A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B22148D4FE004AA78A /* Calendar.swift */; };
+		3C892254214975BF004AA78A /* NYMTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89220021496E21004AA78A /* NYMTAKit.framework */; };
+		3C89226D2149787B004AA78A /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63BE214394B40057E454 /* Shared.swift */; };
+		3C89226E2149787B004AA78A /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63B7214387600057E454 /* ColorsTest.swift */; };
+		3C89226F2149787B004AA78A /* ComplexesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63BC214394840057E454 /* ComplexesTest.swift */; };
+		3C8922702149787B004AA78A /* StationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63C62143A64E0057E454 /* StationsTest.swift */; };
+		3C8922712149787B004AA78A /* EntrancesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63CC2143A7EF0057E454 /* EntrancesTest.swift */; };
+		3C89227221497887004AA78A /* MTA - StationEntrances.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63CA2143A7D90057E454 /* MTA - StationEntrances.csv */; };
+		3C89227321497887004AA78A /* NYC - MTA Subway Stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63C82143A6730057E454 /* NYC - MTA Subway Stations.csv */; };
+		3C89227421497887004AA78A /* MTA - StationComplexes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63C0214399540057E454 /* MTA - StationComplexes.csv */; };
+		3C89227521497887004AA78A /* MTA - colors.fixed.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63BA21438CD30057E454 /* MTA - colors.fixed.csv */; };
+		3C89229821497BF1004AA78A /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AC2148D2F9004AA78A /* StopTime.swift */; };
+		3C89229921497BF1004AA78A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AE2148D3BE004AA78A /* Transfer.swift */; };
+		3C89229A21497BF1004AA78A /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B02148D475004AA78A /* CalendarDate.swift */; };
+		3C89229B21497BF1004AA78A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B22148D4FE004AA78A /* Calendar.swift */; };
+		3C89229C21497BF1004AA78A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47AE2142E3400004EF49 /* Colors.swift */; };
+		3C89229D21497BF1004AA78A /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B82142EA220004EF49 /* Stations.swift */; };
+		3C89229E21497BF1004AA78A /* Complexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C02142EDE60004EF49 /* Complexes.swift */; };
+		3C89229F21497BF1004AA78A /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C22142EE570004EF49 /* DataSource.swift */; };
+		3C8922A021497BF1004AA78A /* Entrances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C62142F27A0004EF49 /* Entrances.swift */; };
+		3C8922A121497BF1004AA78A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B02142E3880004EF49 /* Color.swift */; };
+		3C8922A221497BF1004AA78A /* Complex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47BE2142EDA40004EF49 /* Complex.swift */; };
+		3C8922A321497BF1004AA78A /* DaytimeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47BC2142ED080004EF49 /* DaytimeRoute.swift */; };
+		3C8922A421497BF1004AA78A /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C42142F2720004EF49 /* Entrance.swift */; };
+		3C8922A521497BF1004AA78A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47BA2142EABA0004EF49 /* Errors.swift */; };
+		3C8922A621497BF1004AA78A /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B62142E9FE0004EF49 /* Station.swift */; };
+		3C8922A721497BF1004AA78A /* NYMTAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5D47A52142E2480004EF49 /* NYMTAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C8922A921497CF6004AA78A /* NSDataAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8922A821497CF6004AA78A /* NSDataAsset.swift */; };
+		3C8922AA21497CF6004AA78A /* NSDataAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8922A821497CF6004AA78A /* NSDataAsset.swift */; };
 		3CCA639C214381630057E454 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA639B214381630057E454 /* Cartfile */; };
 		3CCA63A1214381CD0057E454 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCA639F214381CD0057E454 /* GTFSKit.framework */; };
 		3CCA63AB214381E40057E454 /* NYMTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5D47A22142E2470004EF49 /* NYMTAKit.framework */; };
@@ -43,6 +77,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3C892255214975BF004AA78A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C5D47992142E2470004EF49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C8921FF21496E21004AA78A;
+			remoteInfo = "NYMTAKit-macOS";
+		};
 		3CCA63AC214381E40057E454 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C5D47992142E2470004EF49 /* Project object */;
@@ -53,6 +94,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3C89227C21497A6C004AA78A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C772885214981B00070E314 /* GTFSKit.framework in CopyFiles */,
+				3C772886214981B00070E314 /* CSV.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CCA63B1214381F00057E454 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,11 +134,20 @@
 		3C5D47C22142EE570004EF49 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		3C5D47C42142F2720004EF49 /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		3C5D47C62142F27A0004EF49 /* Entrances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrances.swift; sourceTree = "<group>"; };
+		3C77287D214981400070E314 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/Mac/CSV.framework; sourceTree = "<group>"; };
+		3C77287E214981400070E314 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/Mac/GTFSKit.framework; sourceTree = "<group>"; };
+		3C772883214981B00070E314 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTFSKit.framework; sourceTree = "<group>"; };
+		3C772884214981B00070E314 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSV.framework; sourceTree = "<group>"; };
 		3C8921A92148CF4B004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
 		3C8921AC2148D2F9004AA78A /* StopTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTime.swift; sourceTree = "<group>"; };
 		3C8921AE2148D3BE004AA78A /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
 		3C8921B02148D475004AA78A /* CalendarDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
 		3C8921B22148D4FE004AA78A /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		3C89220021496E21004AA78A /* NYMTAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYMTAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8922472149757F004AA78A /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/macOS/GTFSKit.framework; sourceTree = "<group>"; };
+		3C8922482149757F004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/macOS/CSV.framework; sourceTree = "<group>"; };
+		3C89224F214975BF004AA78A /* NYMTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYMTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C8922A821497CF6004AA78A /* NSDataAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDataAsset.swift; sourceTree = "<group>"; };
 		3CCA639B214381630057E454 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		3CCA639F214381CD0057E454 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/iOS/GTFSKit.framework; sourceTree = "<group>"; };
 		3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYMTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +175,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C8921FC21496E21004AA78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C77287F214981400070E314 /* CSV.framework in Frameworks */,
+				3C772880214981400070E314 /* GTFSKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C89224C214975BF004AA78A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C892254214975BF004AA78A /* NYMTAKit.framework in Frameworks */,
+				3C772881214981850070E314 /* CSV.framework in Frameworks */,
+				3C772882214981850070E314 /* GTFSKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CCA63A3214381E40057E454 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,9 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				3CCA639B214381630057E454 /* Cartfile */,
-				3CCA63C32143A31E0057E454 /* Utility */,
 				3C5D47B52142E8C70004EF49 /* DataSources */,
 				3C5D47AD2142E2F70004EF49 /* Types */,
+				3CCA63C32143A31E0057E454 /* Utility */,
 				3C5D47A42142E2470004EF49 /* NYMTAKit */,
 				3CCA63A7214381E40057E454 /* NYMTAKitTests */,
 				3C5D47A32142E2470004EF49 /* Products */,
@@ -144,6 +224,8 @@
 			children = (
 				3C5D47A22142E2470004EF49 /* NYMTAKit.framework */,
 				3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */,
+				3C89220021496E21004AA78A /* NYMTAKit.framework */,
+				3C89224F214975BF004AA78A /* NYMTAKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +268,12 @@
 			isa = PBXGroup;
 			children = (
 				3C8921A92148CF4B004AA78A /* CSV.framework */,
+				3C8922482149757F004AA78A /* CSV.framework */,
+				3C772884214981B00070E314 /* CSV.framework */,
+				3C8922472149757F004AA78A /* GTFSKit.framework */,
+				3C77287D214981400070E314 /* CSV.framework */,
+				3C77287E214981400070E314 /* GTFSKit.framework */,
+				3C772883214981B00070E314 /* GTFSKit.framework */,
 				3CCA63B4214383EE0057E454 /* HEXColor.framework */,
 				3CCA639F214381CD0057E454 /* GTFSKit.framework */,
 			);
@@ -195,13 +283,13 @@
 		3CCA63A7214381E40057E454 /* NYMTAKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				3CCA63BE214394B40057E454 /* Shared.swift */,
-				3CCA63B921438CB10057E454 /* Test Data */,
 				3CCA63AA214381E40057E454 /* Info.plist */,
+				3CCA63BE214394B40057E454 /* Shared.swift */,
 				3CCA63B7214387600057E454 /* ColorsTest.swift */,
 				3CCA63BC214394840057E454 /* ComplexesTest.swift */,
 				3CCA63C62143A64E0057E454 /* StationsTest.swift */,
 				3CCA63CC2143A7EF0057E454 /* EntrancesTest.swift */,
+				3CCA63B921438CB10057E454 /* Test Data */,
 			);
 			path = NYMTAKitTests;
 			sourceTree = "<group>";
@@ -224,6 +312,7 @@
 				3C8921AE2148D3BE004AA78A /* Transfer.swift */,
 				3C8921B02148D475004AA78A /* CalendarDate.swift */,
 				3C8921B22148D4FE004AA78A /* Calendar.swift */,
+				3C8922A821497CF6004AA78A /* NSDataAsset.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -239,12 +328,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C8921FD21496E21004AA78A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8922A721497BF1004AA78A /* NYMTAKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3C5D47A12142E2470004EF49 /* NYMTAKit */ = {
+		3C5D47A12142E2470004EF49 /* NYMTAKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C5D47AA2142E2480004EF49 /* Build configuration list for PBXNativeTarget "NYMTAKit" */;
+			buildConfigurationList = 3C5D47AA2142E2480004EF49 /* Build configuration list for PBXNativeTarget "NYMTAKit-iOS" */;
 			buildPhases = (
 				3C5D479D2142E2470004EF49 /* Sources */,
 				3C5D479E2142E2470004EF49 /* Frameworks */,
@@ -255,14 +352,51 @@
 			);
 			dependencies = (
 			);
-			name = NYMTAKit;
+			name = "NYMTAKit-iOS";
 			productName = NYMTAKit;
 			productReference = 3C5D47A22142E2470004EF49 /* NYMTAKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3CCA63A5214381E40057E454 /* NYMTAKitTests */ = {
+		3C8921FF21496E21004AA78A /* NYMTAKit-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CCA63AE214381E40057E454 /* Build configuration list for PBXNativeTarget "NYMTAKitTests" */;
+			buildConfigurationList = 3C89220521496E21004AA78A /* Build configuration list for PBXNativeTarget "NYMTAKit-macOS" */;
+			buildPhases = (
+				3C8921FB21496E21004AA78A /* Sources */,
+				3C8921FC21496E21004AA78A /* Frameworks */,
+				3C8921FD21496E21004AA78A /* Headers */,
+				3C8921FE21496E21004AA78A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NYMTAKit-macOS";
+			productName = "NYCMTAKit-macOS";
+			productReference = 3C89220021496E21004AA78A /* NYMTAKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C89224E214975BF004AA78A /* NYMTAKitTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C892257214975BF004AA78A /* Build configuration list for PBXNativeTarget "NYMTAKitTests-macOS" */;
+			buildPhases = (
+				3C89224B214975BF004AA78A /* Sources */,
+				3C89224C214975BF004AA78A /* Frameworks */,
+				3C89224D214975BF004AA78A /* Resources */,
+				3C89227C21497A6C004AA78A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C892256214975BF004AA78A /* PBXTargetDependency */,
+			);
+			name = "NYMTAKitTests-macOS";
+			productName = "NYMTAKitTests-macOS";
+			productReference = 3C89224F214975BF004AA78A /* NYMTAKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CCA63A5214381E40057E454 /* NYMTAKitTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCA63AE214381E40057E454 /* Build configuration list for PBXNativeTarget "NYMTAKitTests-iOS" */;
 			buildPhases = (
 				3CCA63A2214381E40057E454 /* Sources */,
 				3CCA63A3214381E40057E454 /* Frameworks */,
@@ -274,7 +408,7 @@
 			dependencies = (
 				3CCA63AD214381E40057E454 /* PBXTargetDependency */,
 			);
-			name = NYMTAKitTests;
+			name = "NYMTAKitTests-iOS";
 			productName = NYMTAKitTests;
 			productReference = 3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -293,6 +427,12 @@
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
 					};
+					3C8921FF21496E21004AA78A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3C89224E214975BF004AA78A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					3CCA63A5214381E40057E454 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -310,8 +450,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3C5D47A12142E2470004EF49 /* NYMTAKit */,
-				3CCA63A5214381E40057E454 /* NYMTAKitTests */,
+				3C5D47A12142E2470004EF49 /* NYMTAKit-iOS */,
+				3CCA63A5214381E40057E454 /* NYMTAKitTests-iOS */,
+				3C8921FF21496E21004AA78A /* NYMTAKit-macOS */,
+				3C89224E214975BF004AA78A /* NYMTAKitTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -322,6 +464,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CCA639C214381630057E454 /* Cartfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8921FE21496E21004AA78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C89224D214975BF004AA78A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C89227321497887004AA78A /* NYC - MTA Subway Stations.csv in Resources */,
+				3C89227221497887004AA78A /* MTA - StationEntrances.csv in Resources */,
+				3C89227421497887004AA78A /* MTA - StationComplexes.csv in Resources */,
+				3C89227521497887004AA78A /* MTA - colors.fixed.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +510,7 @@
 				3C8921B32148D4FE004AA78A /* Calendar.swift in Sources */,
 				3C5D47B92142EA220004EF49 /* Stations.swift in Sources */,
 				3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */,
+				3C8922A921497CF6004AA78A /* NSDataAsset.swift in Sources */,
 				3C8921AD2148D2F9004AA78A /* StopTime.swift in Sources */,
 				3C8921B12148D475004AA78A /* CalendarDate.swift in Sources */,
 				3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */,
@@ -358,6 +519,41 @@
 				3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */,
 				3C5D47B12142E3880004EF49 /* Color.swift in Sources */,
 				3C8921AF2148D3BE004AA78A /* Transfer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C8921FB21496E21004AA78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8922A021497BF1004AA78A /* Entrances.swift in Sources */,
+				3C8922A621497BF1004AA78A /* Station.swift in Sources */,
+				3C89229921497BF1004AA78A /* Transfer.swift in Sources */,
+				3C89229C21497BF1004AA78A /* Colors.swift in Sources */,
+				3C8922A121497BF1004AA78A /* Color.swift in Sources */,
+				3C89229D21497BF1004AA78A /* Stations.swift in Sources */,
+				3C89229A21497BF1004AA78A /* CalendarDate.swift in Sources */,
+				3C8922AA21497CF6004AA78A /* NSDataAsset.swift in Sources */,
+				3C8922A521497BF1004AA78A /* Errors.swift in Sources */,
+				3C89229821497BF1004AA78A /* StopTime.swift in Sources */,
+				3C89229E21497BF1004AA78A /* Complexes.swift in Sources */,
+				3C8922A221497BF1004AA78A /* Complex.swift in Sources */,
+				3C8922A421497BF1004AA78A /* Entrance.swift in Sources */,
+				3C8922A321497BF1004AA78A /* DaytimeRoute.swift in Sources */,
+				3C89229F21497BF1004AA78A /* DataSource.swift in Sources */,
+				3C89229B21497BF1004AA78A /* Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C89224B214975BF004AA78A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C89226F2149787B004AA78A /* ComplexesTest.swift in Sources */,
+				3C8922712149787B004AA78A /* EntrancesTest.swift in Sources */,
+				3C89226D2149787B004AA78A /* Shared.swift in Sources */,
+				3C8922702149787B004AA78A /* StationsTest.swift in Sources */,
+				3C89226E2149787B004AA78A /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +572,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3C892256214975BF004AA78A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C8921FF21496E21004AA78A /* NYMTAKit-macOS */;
+			targetProxy = 3C892255214975BF004AA78A /* PBXContainerItemProxy */;
+		};
 		3CCA63AD214381E40057E454 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3C5D47A12142E2470004EF49 /* NYMTAKit */;
+			target = 3C5D47A12142E2470004EF49 /* NYMTAKit-iOS */;
 			targetProxy = 3CCA63AC214381E40057E454 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -526,7 +727,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = NYMTAKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -556,10 +757,122 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = NYMTAKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C89220621496E21004AA78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/NYMTAKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYCMTAKit;
+				PRODUCT_NAME = NYMTAKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3C89220721496E21004AA78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/NYMTAKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYCMTAKit;
+				PRODUCT_NAME = NYMTAKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3C892258214975BF004AA78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = NYMTAKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
+				PRODUCT_NAME = NYMTAKitTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3C892259214975BF004AA78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = NYMTAKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
+				PRODUCT_NAME = NYMTAKitTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -574,7 +887,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NYMTAKitTests;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -591,7 +904,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NYMTAKitTests;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -609,7 +922,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C5D47AA2142E2480004EF49 /* Build configuration list for PBXNativeTarget "NYMTAKit" */ = {
+		3C5D47AA2142E2480004EF49 /* Build configuration list for PBXNativeTarget "NYMTAKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3C5D47AB2142E2480004EF49 /* Debug */,
@@ -618,7 +931,25 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CCA63AE214381E40057E454 /* Build configuration list for PBXNativeTarget "NYMTAKitTests" */ = {
+		3C89220521496E21004AA78A /* Build configuration list for PBXNativeTarget "NYMTAKit-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C89220621496E21004AA78A /* Debug */,
+				3C89220721496E21004AA78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C892257214975BF004AA78A /* Build configuration list for PBXNativeTarget "NYMTAKitTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C892258214975BF004AA78A /* Debug */,
+				3C892259214975BF004AA78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCA63AE214381E40057E454 /* Build configuration list for PBXNativeTarget "NYMTAKitTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CCA63AF214381E40057E454 /* Debug */,

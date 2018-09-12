@@ -6,8 +6,13 @@
 //  Copyright © 2018 Adorkable. All rights reserved.
 //
 
+
+#if os(iOS)
 import UIKit
 import HEXColor
+#else
+import Cocoa
+#endif
 import GTFSKit
 
 public struct Color: Decodable {
@@ -71,9 +76,15 @@ public struct Color: Decodable {
     }
     let lineOrBranchString: String
     
+    #if os(iOS)
     public func asUIColor() throws -> UIColor {
         return try UIColor(rgba_throws: self.rgbHex)
     }
+//    #else
+//    public func asNSColor() throws -> NSColor {
+//        return try NSColor(rgba_throws: self.rgbHex)
+//    }
+    #endif
     public let rgbHex: String
     public let pantoneCVC: String
     public let cmyk: String

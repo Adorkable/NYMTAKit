@@ -9,6 +9,11 @@
 import Foundation
 import GTFSKit
 import CSV
+#if os(iOS)
+import UIKit
+#else
+import Cocoa
+#endif
 
 open class DataSource<Type> where Type: Decodable {
     public var values: [Type] {
