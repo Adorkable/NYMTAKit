@@ -45,30 +45,3 @@ open class UnexpectedValueForTypeError: Error {
     }
 }
 
-open class NoMatchesFoundError<Type>: Error {
-    public let context: String
-    public let forObject: Type
-    public init(context: String, for forObject: Type) {
-        self.context = context
-        self.forObject = forObject
-    }
-    
-    public var localizedDescription: String {
-        return "No '\(self.context)' matches found for \(self.forObject)"
-    }
-}
-
-open class TooManyMatchesFoundError<Type, MatchType>: Error {
-    public let context: String
-    public let forObject: Type
-    public let matches: [MatchType]
-    public init(context: String, for forObject: Type, matches: [MatchType]) {
-        self.context = context
-        self.forObject = forObject
-        self.matches = matches
-    }
-    
-    public var localizedDescription: String {
-        return "Too many '\(self.context)' matches (\(self.matches.count)) found for \(self.forObject)"
-    }
-}

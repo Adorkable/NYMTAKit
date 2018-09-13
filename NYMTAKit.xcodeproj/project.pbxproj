@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C4DE6042149986C00985BBB /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE6032149986C00985BBB /* Route.swift */; };
-		3C4DE6052149986C00985BBB /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE6032149986C00985BBB /* Route.swift */; };
-		3C4DE6072149993A00985BBB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE6062149993A00985BBB /* Trip.swift */; };
-		3C4DE6082149993A00985BBB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE6062149993A00985BBB /* Trip.swift */; };
-		3C4DE60A21499AF100985BBB /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE60921499AF100985BBB /* Stop.swift */; };
-		3C4DE60B21499AF100985BBB /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE60921499AF100985BBB /* Stop.swift */; };
+		3C4DE649214AE41F00985BBB /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE648214AE41E00985BBB /* Array.swift */; };
+		3C4DE64A214AE41F00985BBB /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DE648214AE41E00985BBB /* Array.swift */; };
 		3C5D47A72142E2480004EF49 /* NYMTAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5D47A52142E2480004EF49 /* NYMTAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47AE2142E3400004EF49 /* Colors.swift */; };
 		3C5D47B12142E3880004EF49 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B02142E3880004EF49 /* Color.swift */; };
@@ -33,10 +29,6 @@
 		3C772886214981B00070E314 /* CSV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C772884214981B00070E314 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C8921AA2148CF4B004AA78A /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; };
 		3C8921AB2148CF63004AA78A /* CSV.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C8921A92148CF4B004AA78A /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3C8921AD2148D2F9004AA78A /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AC2148D2F9004AA78A /* StopTime.swift */; };
-		3C8921AF2148D3BE004AA78A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AE2148D3BE004AA78A /* Transfer.swift */; };
-		3C8921B12148D475004AA78A /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B02148D475004AA78A /* CalendarDate.swift */; };
-		3C8921B32148D4FE004AA78A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B22148D4FE004AA78A /* Calendar.swift */; };
 		3C892254214975BF004AA78A /* NYMTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C89220021496E21004AA78A /* NYMTAKit.framework */; };
 		3C89226D2149787B004AA78A /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63BE214394B40057E454 /* Shared.swift */; };
 		3C89226E2149787B004AA78A /* ColorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA63B7214387600057E454 /* ColorsTest.swift */; };
@@ -47,10 +39,6 @@
 		3C89227321497887004AA78A /* NYC - MTA Subway Stations.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63C82143A6730057E454 /* NYC - MTA Subway Stations.csv */; };
 		3C89227421497887004AA78A /* MTA - StationComplexes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63C0214399540057E454 /* MTA - StationComplexes.csv */; };
 		3C89227521497887004AA78A /* MTA - colors.fixed.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA63BA21438CD30057E454 /* MTA - colors.fixed.csv */; };
-		3C89229821497BF1004AA78A /* StopTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AC2148D2F9004AA78A /* StopTime.swift */; };
-		3C89229921497BF1004AA78A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921AE2148D3BE004AA78A /* Transfer.swift */; };
-		3C89229A21497BF1004AA78A /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B02148D475004AA78A /* CalendarDate.swift */; };
-		3C89229B21497BF1004AA78A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8921B22148D4FE004AA78A /* Calendar.swift */; };
 		3C89229C21497BF1004AA78A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47AE2142E3400004EF49 /* Colors.swift */; };
 		3C89229D21497BF1004AA78A /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B82142EA220004EF49 /* Stations.swift */; };
 		3C89229E21497BF1004AA78A /* Complexes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47C02142EDE60004EF49 /* Complexes.swift */; };
@@ -126,9 +114,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C4DE6032149986C00985BBB /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		3C4DE6062149993A00985BBB /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
-		3C4DE60921499AF100985BBB /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		3C4DE648214AE41E00985BBB /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		3C5D47A22142E2470004EF49 /* NYMTAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYMTAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5D47A52142E2480004EF49 /* NYMTAKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYMTAKit.h; sourceTree = "<group>"; };
 		3C5D47A62142E2480004EF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,10 +134,6 @@
 		3C772883214981B00070E314 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTFSKit.framework; sourceTree = "<group>"; };
 		3C772884214981B00070E314 /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CSV.framework; sourceTree = "<group>"; };
 		3C8921A92148CF4B004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/iOS/CSV.framework; sourceTree = "<group>"; };
-		3C8921AC2148D2F9004AA78A /* StopTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTime.swift; sourceTree = "<group>"; };
-		3C8921AE2148D3BE004AA78A /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
-		3C8921B02148D475004AA78A /* CalendarDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
-		3C8921B22148D4FE004AA78A /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		3C89220021496E21004AA78A /* NYMTAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYMTAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8922472149757F004AA78A /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/macOS/GTFSKit.framework; sourceTree = "<group>"; };
 		3C8922482149757F004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/macOS/CSV.framework; sourceTree = "<group>"; };
@@ -317,14 +299,8 @@
 		3CCA63C32143A31E0057E454 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				3C8921AC2148D2F9004AA78A /* StopTime.swift */,
-				3C8921AE2148D3BE004AA78A /* Transfer.swift */,
-				3C8921B02148D475004AA78A /* CalendarDate.swift */,
-				3C8921B22148D4FE004AA78A /* Calendar.swift */,
+				3C4DE648214AE41E00985BBB /* Array.swift */,
 				3C8922A821497CF6004AA78A /* NSDataAsset.swift */,
-				3C4DE6032149986C00985BBB /* Route.swift */,
-				3C4DE6062149993A00985BBB /* Trip.swift */,
-				3C4DE60921499AF100985BBB /* Stop.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -519,21 +495,15 @@
 				3C5D47BF2142EDA40004EF49 /* Complex.swift in Sources */,
 				3C5D47BD2142ED080004EF49 /* DaytimeRoute.swift in Sources */,
 				3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */,
-				3C8921B32148D4FE004AA78A /* Calendar.swift in Sources */,
 				3C5D47B92142EA220004EF49 /* Stations.swift in Sources */,
 				3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */,
-				3C4DE60A21499AF100985BBB /* Stop.swift in Sources */,
 				3C8922A921497CF6004AA78A /* NSDataAsset.swift in Sources */,
-				3C8921AD2148D2F9004AA78A /* StopTime.swift in Sources */,
-				3C4DE6042149986C00985BBB /* Route.swift in Sources */,
-				3C8921B12148D475004AA78A /* CalendarDate.swift in Sources */,
 				3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */,
-				3C4DE6072149993A00985BBB /* Trip.swift in Sources */,
 				3C5D47BB2142EABA0004EF49 /* Errors.swift in Sources */,
+				3C4DE649214AE41F00985BBB /* Array.swift in Sources */,
 				3C5D47C72142F27A0004EF49 /* Entrances.swift in Sources */,
 				3C5D47C32142EE570004EF49 /* DataSource.swift in Sources */,
 				3C5D47B12142E3880004EF49 /* Color.swift in Sources */,
-				3C8921AF2148D3BE004AA78A /* Transfer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,23 +513,17 @@
 			files = (
 				3C8922A021497BF1004AA78A /* Entrances.swift in Sources */,
 				3C8922A621497BF1004AA78A /* Station.swift in Sources */,
-				3C89229921497BF1004AA78A /* Transfer.swift in Sources */,
 				3C89229C21497BF1004AA78A /* Colors.swift in Sources */,
 				3C8922A121497BF1004AA78A /* Color.swift in Sources */,
 				3C89229D21497BF1004AA78A /* Stations.swift in Sources */,
-				3C89229A21497BF1004AA78A /* CalendarDate.swift in Sources */,
-				3C4DE60B21499AF100985BBB /* Stop.swift in Sources */,
 				3C8922AA21497CF6004AA78A /* NSDataAsset.swift in Sources */,
 				3C8922A521497BF1004AA78A /* Errors.swift in Sources */,
-				3C4DE6052149986C00985BBB /* Route.swift in Sources */,
-				3C89229821497BF1004AA78A /* StopTime.swift in Sources */,
 				3C89229E21497BF1004AA78A /* Complexes.swift in Sources */,
-				3C4DE6082149993A00985BBB /* Trip.swift in Sources */,
 				3C8922A221497BF1004AA78A /* Complex.swift in Sources */,
+				3C4DE64A214AE41F00985BBB /* Array.swift in Sources */,
 				3C8922A421497BF1004AA78A /* Entrance.swift in Sources */,
 				3C8922A321497BF1004AA78A /* DaytimeRoute.swift in Sources */,
 				3C89229F21497BF1004AA78A /* DataSource.swift in Sources */,
-				3C89229B21497BF1004AA78A /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
