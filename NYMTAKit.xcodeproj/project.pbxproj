@@ -51,8 +51,6 @@
 		3C8922A521497BF1004AA78A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47BA2142EABA0004EF49 /* Errors.swift */; };
 		3C8922A621497BF1004AA78A /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5D47B62142E9FE0004EF49 /* Station.swift */; };
 		3C8922A721497BF1004AA78A /* NYMTAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5D47A52142E2480004EF49 /* NYMTAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C8922A921497CF6004AA78A /* NSDataAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8922A821497CF6004AA78A /* NSDataAsset.swift */; };
-		3C8922AA21497CF6004AA78A /* NSDataAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8922A821497CF6004AA78A /* NSDataAsset.swift */; };
 		3CCA639C214381630057E454 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA639B214381630057E454 /* Cartfile */; };
 		3CCA63A1214381CD0057E454 /* GTFSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCA639F214381CD0057E454 /* GTFSKit.framework */; };
 		3CCA63AB214381E40057E454 /* NYMTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5D47A22142E2470004EF49 /* NYMTAKit.framework */; };
@@ -138,7 +136,6 @@
 		3C8922472149757F004AA78A /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/macOS/GTFSKit.framework; sourceTree = "<group>"; };
 		3C8922482149757F004AA78A /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = Carthage/Build/macOS/CSV.framework; sourceTree = "<group>"; };
 		3C89224F214975BF004AA78A /* NYMTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYMTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C8922A821497CF6004AA78A /* NSDataAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDataAsset.swift; sourceTree = "<group>"; };
 		3CCA639B214381630057E454 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		3CCA639F214381CD0057E454 /* GTFSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTFSKit.framework; path = Carthage/Build/iOS/GTFSKit.framework; sourceTree = "<group>"; };
 		3CCA63A6214381E40057E454 /* NYMTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYMTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,10 +244,10 @@
 			isa = PBXGroup;
 			children = (
 				3C5D47AE2142E3400004EF49 /* Colors.swift */,
-				3C5D47B82142EA220004EF49 /* Stations.swift */,
 				3C5D47C02142EDE60004EF49 /* Complexes.swift */,
 				3C5D47C22142EE570004EF49 /* DataSource.swift */,
 				3C5D47C62142F27A0004EF49 /* Entrances.swift */,
+				3C5D47B82142EA220004EF49 /* Stations.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -300,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				3C4DE648214AE41E00985BBB /* Array.swift */,
-				3C8922A821497CF6004AA78A /* NSDataAsset.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -417,9 +413,11 @@
 					};
 					3C8921FF21496E21004AA78A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					3C89224E214975BF004AA78A = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					3CCA63A5214381E40057E454 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -497,7 +495,6 @@
 				3C5D47AF2142E3400004EF49 /* Colors.swift in Sources */,
 				3C5D47B92142EA220004EF49 /* Stations.swift in Sources */,
 				3C5D47C52142F2720004EF49 /* Entrance.swift in Sources */,
-				3C8922A921497CF6004AA78A /* NSDataAsset.swift in Sources */,
 				3C5D47B72142E9FE0004EF49 /* Station.swift in Sources */,
 				3C5D47BB2142EABA0004EF49 /* Errors.swift in Sources */,
 				3C4DE649214AE41F00985BBB /* Array.swift in Sources */,
@@ -516,7 +513,6 @@
 				3C89229C21497BF1004AA78A /* Colors.swift in Sources */,
 				3C8922A121497BF1004AA78A /* Color.swift in Sources */,
 				3C89229D21497BF1004AA78A /* Stations.swift in Sources */,
-				3C8922AA21497CF6004AA78A /* NSDataAsset.swift in Sources */,
 				3C8922A521497BF1004AA78A /* Errors.swift in Sources */,
 				3C89229E21497BF1004AA78A /* Complexes.swift in Sources */,
 				3C8922A221497BF1004AA78A /* Complex.swift in Sources */,
@@ -620,6 +616,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -677,6 +674,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -768,12 +766,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYCMTAKit;
 				PRODUCT_NAME = NYMTAKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -799,12 +796,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYCMTAKit;
 				PRODUCT_NAME = NYMTAKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -825,11 +821,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
 				PRODUCT_NAME = NYMTAKitTests;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -850,11 +845,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKitTests;
 				PRODUCT_NAME = NYMTAKitTests;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
