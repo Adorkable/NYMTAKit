@@ -1,3 +1,5 @@
 github "adorkable-forkable/GTFSKit" "master"
 
 github "SeRG1k17/UIColor-Hex-Swift" "master"
+
+github "adorkable-forkable/CSV.swift" "master"
