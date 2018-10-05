@@ -766,7 +766,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYCMTAKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKit;
 				PRODUCT_NAME = NYMTAKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -796,7 +796,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYCMTAKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorkable.NYMTAKit;
 				PRODUCT_NAME = NYMTAKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
