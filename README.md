@@ -4,7 +4,7 @@
 A Swift framework for processing and using [New York's MTA Open Data](http://datamine.mta.info/). Utilizing [Jack Wilsdon's GTFSKit](https://github.com/jackwilsdon/GTFSKit) for GTFS compatible portions of the MTA Open Data.
 
 ## Usage
-Please see the [API documentation](docs/index.html) found in the `docs` folder of the repo.
+Please see the [API documentation](https://adorkable.github.io/NYMTAKit/) found in the [`docs`](docs/index.html) folder of the repo.
 
 ## Installation
 **NYMTAKit** is available through **[Carthage](https://github.com/Carthage/Carthage)**, to install simply add the following to your `Cartfile`:
