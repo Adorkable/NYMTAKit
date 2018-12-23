@@ -10,14 +10,20 @@ import Foundation
 import CoreLocation
 import GTFSKit
 
+/// Entrance information
 public struct Entrance: Decodable {
+    /// Division
     public let division: String
+
+    /// Line or branch
     public let line: String
 
+    /// Station name
     public let stationName: String
 
     let stationLatitude: Double
     let stationLongitude: Double
+    /// Station location
     public var stationLocation: CLLocation {
         return CLLocation(latitude: self.stationLatitude, longitude: self.stationLongitude)
     }
@@ -36,6 +42,7 @@ public struct Entrance: Decodable {
     let route9: String?
     let route10: String?
     let route11: String?
+    /// Routes
     public var routes: [String] {
         return [
             self.route1,
@@ -53,10 +60,15 @@ public struct Entrance: Decodable {
     }
     
     let typeString: String
+    /// Enum type of entrance
     public enum `Type`: CustomStringConvertible {
+        /// Stair
         case stair
+        /// Elevator
         case elevator
+        /// Door
         case door
+        /// Easement
         case easement
         
         init(from: String) throws {
@@ -73,14 +85,16 @@ public struct Entrance: Decodable {
                 throw UnexpectedValueForTypeError(value: from, type: "Type", context: "Entrance")
             }
         }
-        
+
+        /// All `Type`s
         public static let all: [Type] = [
             .stair,
             .elevator,
             .door,
             .easement
         ]
-        
+
+        /// Human readable description
         public var description: String {
             switch self {
             case .stair:
@@ -94,6 +108,10 @@ public struct Entrance: Decodable {
             }
         }
     }
+    /// Type of entrance
+    ///
+    /// - Returns: Type
+    /// - Throws: When encountering an unexpectedly parsed type
     public func type() throws -> Type {
         return try Type(from: self.typeString)
     }
@@ -108,23 +126,30 @@ public struct Entrance: Decodable {
         return true
     }
     let entryString: String
+    /// Is an entry
     public var entry: Bool {
         return Entrance.asBool(self.entryString)
     }
     
     let exitOnlyString: String
+    /// Is an Exit Only
     public var exitOnly: Bool {
         return Entrance.asBool(self.exitOnlyString)
     }
     
     let vendingString: String
+    /// Has vending machines
     public var vending: Bool {
         return Entrance.asBool(self.vendingString)
     }
     
     let staffingString: String
+
+    /// Enum staffing
     public enum Staffing {
+        /// Fully staffed
         case full
+        /// No staff
         case none
         
         init(from: String) throws {
@@ -141,12 +166,14 @@ public struct Entrance: Decodable {
                 throw UnexpectedValueForTypeError(value: from, type: "Staffing", context: "Entrance")
             }
         }
-        
+
+        /// All `Staffing`
         public static let all: [Staffing] = [
             .full,
             .none
         ]
-        
+
+        /// Human readable description
         public var description: String {
             switch self {
             case .full:
@@ -156,29 +183,41 @@ public struct Entrance: Decodable {
             }
         }
     }
+    /// Staffing
+    ///
+    /// - Returns: Staffing
+    /// - Throws: When encountering an unexpectedly parsed staff value
     public func staffing() throws -> Staffing {
         return try Staffing(from: self.staffingString)
     }
-    
+
+    /// Staff hours
     public let staffHours: String // TODO: Time Range
     
     let adaString: String
+    /// ADA compliant
     public var ada: Bool {
         return Entrance.asBool(self.adaString)
     }
+    /// ADA compliancy notes
     public let adaNotes: String
     
     let freeCrossoverString: String
+    /// Free crossover
     public var freeCrossover: Bool {
         return Entrance.asBool(self.freeCrossoverString)
     }
     
+    /// North-south street entrance
     public let northSouthStreet: String
+    /// East-west street entrance
     public let eastWestStreet: String
+    /// Corner entrance
     public let corner: String
 
     let latitude: Double
     let longitude: Double
+    /// Location
     public var location: CLLocation {
         return CLLocation(latitude: self.latitude, longitude: self.longitude)
     }

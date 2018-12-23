@@ -9,4 +9,5 @@
 import Foundation
 
 // Eventually potentially a more appropriate type, maybe an enum or self managed type
+/// Daytime Route ID
 public typealias DaytimeRoute = String

@@ -9,8 +9,12 @@
 import Foundation
 import GTFSKit
 
+/// Complex, generally used to organize multiple stations
 public struct Complex: Decodable {
+    /// ID
     public let id: UInt
+
+    /// Name
     public let name: String
     
     enum CodingKeys : String, CodingKey {

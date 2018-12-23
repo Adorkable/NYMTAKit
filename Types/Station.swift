@@ -10,8 +10,11 @@ import Foundation
 import CoreLocation
 import GTFSKit
 
+/// Station
 public struct Station: Decodable {
+    /// ID
     public let id: UInt
+    /// ID of complex
     public let complexId: UInt
     func complex(complexes: Complexes) -> Complex? {
         var found: Complex? = nil
@@ -24,26 +27,35 @@ public struct Station: Decodable {
         return found
     }
 
+    /// Associated GTFS Stop ID
     public let gtfsStopId: String
     
+    /// Division
     public let division: String
     
+    /// Line or branch
     public let line: String
     
+    /// Name
     public var name: String
     
+    /// Borough
     public let borough: String
     
+    /// Daytime routes
     public var daytimeRoutes: [DaytimeRoute] {
         return self.daytimeRoutesString.split(separator: " ").map({ (substring) -> String in
             return String(substring)
         })
     }
     let daytimeRoutesString: String
+
+    /// Structure
     public let structure: String
     
     let gtfsLatitude: Double
     let gtfsLongitude: Double
+    /// Location
     public var gtfsLocation: CLLocation {
         return CLLocation(latitude: self.gtfsLatitude, longitude: self.gtfsLongitude)
     }

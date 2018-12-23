@@ -11,7 +11,10 @@ import Foundation
 // TODO: support original CSVs
 
 // Based on http://web.mta.info/developers/data/nyct/subway/Stations.csv
+
+/// All Stations Data Source
 open class Stations: DataSource<Station> {
+    /// Stations by `Daytime Route`
     public var stationsByDaytimeRoute: [DaytimeRoute: [Station]] {
         return self._stationsByDaytimeRoute
     }

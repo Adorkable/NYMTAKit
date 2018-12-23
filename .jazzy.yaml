@@ -1,0 +1,5 @@
+clean: true
+author: Ian Grossberg
+author_url: https://www.iangrossberg.com
+github_url: https://github.com/Adorkable/NYMTAKit
+module: NYMTAKit

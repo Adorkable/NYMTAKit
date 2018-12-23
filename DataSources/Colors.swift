@@ -11,7 +11,10 @@ import Foundation
 // TODO: support original CSVs
 
 // Based on http://web.mta.info/developers/data/colors.csv
+
+/// All MTA Colors Data Source
 open class Colors: DataSource<Color> {
+    /// Colors by type of line or branch
     public var colorsByMode: [Color.Mode: [Color]] {
         return self._colorsByMode
     }
@@ -31,6 +34,7 @@ open class Colors: DataSource<Color> {
         return result
     }
     
+    /// Colors by line or branch name
     public var colorByLineOrBranch: [String: Color] {
         return self._colorByLineOrBranch
     }
